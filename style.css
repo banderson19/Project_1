@@ -1,5 +1,42 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: rockefeller;
-
+    font-family: "Candara";
+    font-size: 27px;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 101vw;
+    height: 101vh;
+    background-size: contain;
+    background-image: url("rick-and-morty-33909.jpg");
+}
+}
+.container {
+    display: flex;
+    width: 830px;
+    max-width: 83%;
+    min-width: fit-content;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a4a4;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px 2px;
+}
+#text {
+    font-size: larger;
+    color: #faa85f;
+}
+.btn-grid {
+    min-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 9px;
+    margin-top: 23px;
+}
+.btn {
+    background-color: #00a4a4;
 }
