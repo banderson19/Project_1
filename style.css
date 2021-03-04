@@ -22,11 +22,14 @@ body {
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-color: #00a4a4;
-    border-radius: 3px;
-    box-shadow: 1px 1px 7px 2px;
+    background-color: #53567b;
+    border-radius: 2px;
+    box-shadow: 1px 1px 11px 3px;
+
 }
 #text {
+    justify-content: center;
+    align-items: center;
     font-size: larger;
     color: #faa85f;
 }
@@ -39,4 +42,12 @@ body {
 }
 .btn {
     background-color: #00a4a4;
+    border-color: #f1ec2e;
+    border-radius: 3px;
+    padding: 4px 7px;
+    color: #53567b;
+    outline: none;
+}
+.btn:hover {
+    border-color: #202020;
 }
