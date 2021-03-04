@@ -56,4 +56,5 @@ body {
 }
 .btn:hover {
     border-color: #202020;
+    color:aquamarine;
 }
