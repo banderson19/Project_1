@@ -39,30 +39,30 @@ function selectOption(option)
 const textNodes = [
     {
         id: 1,
-        text: "This is not the Citadel.",
+        text: "Beaker of Genetic Monstrosities",
         options: [
             {
-                text: "okie",
-                setState: { okie: true },
+                text: "SpaceShip",
                 nextText: 2
             },
             {
-                text: "beaker of genetic monstrosity",
+                text: "beaker",
+                setState: {beaker: true },
                 nextText: 2
             }
         ]
     },
     {
         id: 2,
-        text: "You Must make a trade.",
-        requiredState: (currentState) => currentState.okie,
-        setState: {
-        okie: false, spaceship: true },
-        nextText: 3
-    },
-    {
-        text: "keep walking",
-        nextText: 3
+        text: "You are walking along and come across a stranger. You must make a trade, the beaker or the ship.",
+        options: [
+            {
+                text: 'SpaceShip',
+                requiredState: (currentState) => currentState.SpaceShip,
+                setState: { SpaceShip: false, beaker: true },
+                nextText: 3
+            }
+        ]
     }
 ]
 

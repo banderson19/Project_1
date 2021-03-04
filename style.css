@@ -1,23 +1,22 @@
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: "Candara";
-    font-size: 27px;
+    font-size: 25px;
 }
 body {
     justify-content: center;
     align-items: center;
     display: flex;
     width: 101vw;
-    height: 101vh;
+    height: 107vh;
     background-size: contain;
     background-image: url("rick-and-morty-33909.jpg");
 }
-}
 .container {
     display: flex;
-    width: 830px;
-    max-width: 83%;
-    min-width: fit-content;
+    width: 3300px;
+    max-width: 80%;
+    min-width: 23%;
     padding: 0;
     margin: 0;
     justify-content: center;
@@ -28,19 +27,26 @@ body {
 
 }
 #text {
+    max-width: 80%;
+    min-width: 33%;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: larger;
     color: #faa85f;
 }
 .btn-grid {
+    justify-content: space-between;
     min-width: fit-content;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 9px;
-    margin-top: 23px;
+    gap: 23px;
+    margin-top: 21px;
 }
 .btn {
+    margin-right: 7px;
+    margin-left: 31px;
+    margin-bottom: 11px;
     background-color: #00a4a4;
     border-color: #f1ec2e;
     border-radius: 3px;
