@@ -74,7 +74,7 @@ const textNodes = [
     
     {
         id: 3,
-        text: "Citadel of Ricks",
+        text: "Pick a Character.",
         type: "Space station",
         dimension: "unknown",
         residents: [
