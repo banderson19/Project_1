@@ -27,6 +27,7 @@ function showTextNode(textNodeIndex)
             const button = document.createElement('button')
             button.innerText = option.text
             button.classList.add('btn')
+            button.classList.add('btn-go')
             button.addEventListener("click", () => selectOption(option))
             optionsBtnElement.appendChild(button)
         }
@@ -89,10 +90,14 @@ const textNodes = [
                     nextText: 5
                 },
             ]
-  },
-  function getLocation(option)
-  {
+          },
+]
+                //    [ {
+                //         window.onload = function(){
+                //         document.getElementById("btn-go").onclick= function() {
+                //             var start= prompt("Enter the Citadel");
+                // };
+                // },
+  
 
-  }
- ]
 takeOff()

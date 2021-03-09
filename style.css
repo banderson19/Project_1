@@ -39,11 +39,22 @@ body {
     justify-content: space-between;
     min-width: fit-content;
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     gap: 23px;
     margin-top: 21px;
 }
 .btn {
+    margin-right: 7px;
+    margin-left: 31px;
+    margin-bottom: 11px;
+    background-color: #00a4a4;
+    border-color: #f1ec2e;
+    border-radius: 3px;
+    padding: 4px 7px;
+    color: #53567b;
+    outline: none;
+}
+.btn-go {
     margin-right: 7px;
     margin-left: 31px;
     margin-bottom: 11px;
