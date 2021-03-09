@@ -26,6 +26,59 @@ body {
     box-shadow: 1px 1px 11px 3px;
 
 }
+.nasaPhotos {
+    display: flex;
+    width: 9300px;
+    max-width: 80%;
+    min-width: 23%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #53567b;
+    border-radius: 2px;
+    box-shadow: 1px 1px 11px 3px;
+}
+#apod_img_ofDay {
+    display: flex;
+    width: 900px;
+    height: 900px;
+    max-width: 80%;
+    min-width: 23%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #53567b;
+    border-radius: 2px;
+    box-shadow: 1px 1px 11px 3px;
+}
+#apod_vid_id {
+    display: flex;
+    width: 900px;
+    height: 900px;
+    max-width: 80%;
+    min-width: 23%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #53567b;
+    border-radius: 2px;
+    box-shadow: 1px 1px 11px 3px;
+}
+#apod_explanation {  max-width: 80%;
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: #faa85f;
+
+}
+#apod_title {
+ 
+}
 #text {
     max-width: 80%;
     min-width: 33%;
