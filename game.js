@@ -78,22 +78,18 @@ const textNodes = [
           {
             id: 3,
             text: "Citadel of Ricks",
-            options: 
-            [
+            options: [
                 {
                     text: "Enter",
                     requiredState: (currentState) => currentState.Enter,
                     setState: { Enter: true },
-                    nextText: 
-                    fetch ("https://rickandmortyapi.com/api/location/3"),
+                    nextText: 4
+                },
+                { 
+                    text: "Enter",
+                    nextText: 4
                 }
             ]
-        
   },
-  
-  
-  
-
 ]
-
 takeOff()
