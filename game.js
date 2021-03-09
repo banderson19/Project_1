@@ -17,7 +17,7 @@ function takeOff() {
 }
 function showTextNode(textNodeIndex)
 {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+    const textNode =textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
     while (optionsBtnElement.firstChild) {
         optionsBtnElement.removeChild(optionsBtnElement.firstChild)
@@ -49,14 +49,9 @@ const textNodes = [
         text: "Beaker of Genetic Monstrosities",
         options: [
             {
-                text: "SpaceShip",
+                text: "Let's go.",
                 nextText: 2
             },
-            {
-                text: "beaker",
-                setState: {beaker: true },
-                nextText: 2
-            }
         ]
     },
     {
@@ -67,23 +62,33 @@ const textNodes = [
                 text: 'SpaceShip',
                 requiredState: (currentState) => currentState.SpaceShip,
                 setState: { SpaceShip: false, beaker: true },
-                nextText: 3
-            }
-        ]
-    },
-    
-    {
-        id: 3,
-        text: "Citadel of Ricks",
-        type: "Space station",
-        dimension: "unknown",
-        residents: [
-      "https://rickandmortyapi.com/api/character/8",
-      "https://rickandmortyapi.com/api/character/14",
-    ],
-    "url": "https://rickandmortyapi.com/api/location/3",
-    "created": "2017-11-10T13:08:13.191Z"
-  }
+                nextText: 2
+            },
+            {
+                text: "Spaceship",
+                        nextText: 2
+                    },
+                    {
+                        text: "Beaker",
+                        setState: {beaker: true },
+                        nextText: 2
+                    }
+                ]
+            },
+        
+    // text: "Beaker of Genetic Monstrosities",
+//     {
+//         id: 3,
+//         text: "Citadel of Ricks",
+//         type: "Space station",
+//         dimension: "unknown",
+//         residents: [
+//       "https://rickandmortyapi.com/api/character/8",
+//       "https://rickandmortyapi.com/api/character/14",
+//     ],
+//     "url": "https://rickandmortyapi.com/api/location/3",
+//     "created": "2017-11-10T13:08:13.191Z"
+//   }
 
 ]
 
