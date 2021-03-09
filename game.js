@@ -71,24 +71,28 @@ const textNodes = [
                     {
                         text: "Beaker",
                         setState: {beaker: true },
-                        nextText: 2
+                        nextText: 3
                     }
                 ]
             },
+          {
+            id: 3,
+            text: "Citadel of Ricks",
+            options: 
+            [
+                {
+                    text: "Enter",
+                    requiredState: (currentState) => currentState.Enter,
+                    setState: { Enter: true },
+                    nextText: 
+                    fetch ("https://rickandmortyapi.com/api/location/3"),
+                }
+            ]
         
-    // text: "Beaker of Genetic Monstrosities",
-//     {
-//         id: 3,
-//         text: "Citadel of Ricks",
-//         type: "Space station",
-//         dimension: "unknown",
-//         residents: [
-//       "https://rickandmortyapi.com/api/character/8",
-//       "https://rickandmortyapi.com/api/character/14",
-//     ],
-//     "url": "https://rickandmortyapi.com/api/location/3",
-//     "created": "2017-11-10T13:08:13.191Z"
-//   }
+  },
+  
+  
+  
 
 ]
 
