@@ -49,14 +49,9 @@ const textNodes = [
         text: "Beaker of Genetic Monstrosities",
         options: [
             {
-                text: "SpaceShip",
+                text: "Let's go.",
                 nextText: 2
             },
-            {
-                text: "beaker",
-                setState: {beaker: true },
-                nextText: 2
-            }
         ]
     },
     {
@@ -67,11 +62,21 @@ const textNodes = [
                 text: 'SpaceShip',
                 requiredState: (currentState) => currentState.SpaceShip,
                 setState: { SpaceShip: false, beaker: true },
-                nextText: 3
-            }
-        ]
-    },
-    
+                nextText: 2
+            },
+            {
+                text: "Spaceship",
+                        nextText: 2
+                    },
+                    {
+                        text: "Beaker",
+                        setState: {beaker: true },
+                        nextText: 2
+                    }
+                ]
+            },
+        
+    // text: "Beaker of Genetic Monstrosities",
 //     {
 //         id: 3,
 //         text: "Citadel of Ricks",
