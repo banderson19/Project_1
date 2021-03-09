@@ -1,7 +1,7 @@
 const textElement = document.getElementById("text")
 const optionsBtnElement = document.getElementById("optionsBtn")
 // const chars = await getCharacter()
-// const locations = await getLocation()
+// const locations = getLocation()
 // const episodes = await getEpisode()
 // You can pass a page number to access all the pages inside the info object
 // To know more about the info object and pagination, check
@@ -77,19 +77,22 @@ const textNodes = [
             },
           {
             id: 3,
-            text: "Citadel of Ricks",
+            text: "Do You Choose to Enter?",
             options: [
                 {
-                    text: "Enter",
-                    requiredState: (currentState) => currentState.Enter,
+                    requiredState: (currentState) => currentState.locationElement,
                     setState: { Enter: true },
                     nextText: 4
                 },
-                { 
-                    text: "Enter",
-                    nextText: 4
-                }
+                {
+                    text: "Citadel of Ricks",
+                    nextText: 5
+                },
             ]
   },
-]
+  function getLocation(option)
+  {
+
+  }
+ ]
 takeOff()
