@@ -12,7 +12,7 @@ body {
     background-size: contain;
     background-image: url("rick-and-morty-33909.jpg");
 }
-/* .container {
+.container {
     display: flex;
     width: 3300px;
     max-width: 80%;
@@ -25,50 +25,9 @@ body {
     border-radius: 2px;
     box-shadow: 1px 1px 11px 3px;
 
-} */
-.nasaPhotos {
-    display: flex;
-    width: 9300px;
-    max-width: 80%;
-    min-width: 23%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    box-shadow: 1px 1px 11px 3px;
 }
-#apod_img_ofDay {
-    display: flex;
-    width: 700px;
-    height: 700px;
-    max-width: 80%;
-    min-width: 23%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    background-color:transparent;
-    border-radius: 2px;
-    box-shadow: 1px 1px 11px 3px;
-}
-#apod_vid_id {
-    
-}
-#apod_explanation { 
-     max-width: 80%;
-    min-width: 33%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: larger;
-    color: #faa85f;
 
-}
-#apod_title {
- 
-}
-/* #text {
+ #text {
     max-width: 80%;
     min-width: 33%;
     display: flex;
@@ -110,4 +69,4 @@ body {
 .btn:hover {
     border-color: #202020;
     color:aquamarine;
-} */
+}
