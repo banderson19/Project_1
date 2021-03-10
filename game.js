@@ -10,6 +10,17 @@ const optionsBtnElement = document.getElementById("optionsBtn");
 // const tinyRick = require('rickmortyapi')
 let state = {};
 
+// function makeDoubleDelegate(function1) {
+//   return function() {
+//       if (function1)
+//           function1();
+//       if (function2)
+//           function2();
+//   }
+// }
+
+// window.onload = makeDoubleDelegate(window.onload, function1);
+
 function takeOff() {
   state = {};
   showTextNode(1);
@@ -83,15 +94,19 @@ const textNodes = [
       },
       {
         text: "Citadel of Ricks",
-        nextText: 5,
+        requiredState: (currentState) => window.location.assign('citadel.html'),
+        setState: { Enter: true },
       },
     ],
   },
 ];
+
 //    [ {
-//         window.onload = function(){
-//         document.getElementById("btn-go").onclick= function() {
-//             var start= prompt("Enter the Citadel");
+//        window.onload = function(){
+//   document.getElementById("btn-go").onclick= function() {
+//     var start= prompt("Enter the Citadel");
+// };
+// };  
 // };
 // },
 
