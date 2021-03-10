@@ -1,5 +1,5 @@
 * {
-    background-color: #45a6ad;
+  background-color: #45a6ad;
 }
 *::before,
 *::after {
@@ -51,18 +51,18 @@ h2 {
 }
 
 footer {
-  margin-top: 200px;;
+  margin-top: 200px;
   width: 100%;
   height: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: #202020
+  color: #202020;
 }
 p {
-    font-size: 20px;
-    background-color: #54781f;
+  font-size: 20px;
+  background-color: #54781f;
 }
 
 /*Responsive*/

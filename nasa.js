@@ -1,10 +1,14 @@
-$(document).ready(function(){
-  $("button").click(function(){
-   $('<img src="https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"/>').appendTo("body");
+$(document).ready(function () {
+  $("button").click(function () {
+    $(
+      '<img src="https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"/>'
+    ).appendTo("body");
     // Appends the HTML Fragment i.e image to <body>
-    $('#apod_img_ofDay').prepend('<img id="apod_img_ofDay" src="https://apod.nasa.gov/apod/image/e_lens.gif" />');
-    });
+    $("#apod_img_ofDay").prepend(
+      '<img id="apod_img_ofDay" src="https://apod.nasa.gov/apod/image/e_lens.gif" />'
+    );
   });
+});
 
 $.ajax({
   let: (url =
@@ -18,7 +22,6 @@ $.ajax({
 
       $("#apod_img_ofDay").attr("src", result.url);
     } else {
-
       $("#apod_img_ofDay").attr("src", result.url);
     }
 

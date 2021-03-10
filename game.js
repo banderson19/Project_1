@@ -74,24 +74,24 @@ const textNodes = [
         setState: { Citadel: true },
       },
       {
-      text: "Citadel",
-      setState: {Citadel: true },
-      nextText: 4,
+        text: "Citadel",
+        setState: { Citadel: true },
+        nextText: 4,
       },
     ],
   },
   {
     id: 4,
     requiredState: (currentState) => currentState.Enter,
-      setState: { Enter: true },
-      options: [
-        {
-          text: "Enter",
-          requiredState: (currentState) => window.location.assign('citadel.html'),
-          setState: { Enter: true },
-        },
-      ],
-    },
+    setState: { Enter: true },
+    options: [
+      {
+        text: "Enter",
+        requiredState: (currentState) => window.location.assign("citadel.html"),
+        setState: { Enter: true },
+      },
+    ],
+  },
 ];
 
 takeOff();

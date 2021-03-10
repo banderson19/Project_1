@@ -1,5 +1,4 @@
-
- * {
+* {
   box-sizing: border-box;
   font-family: "Candara";
   font-size: 35px;
@@ -7,7 +6,7 @@
   background-color: #53567b;
 }
 header {
-    background-color: #54781f;
+  background-color: #54781f;
 }
 .btnContainer {
   display: none;
@@ -20,13 +19,12 @@ header {
 }
 
 .btnChar {
-        background-color: #00a4a4;
-        border-color: #f1ec2e;
-        border-radius: 3px;
-        padding: 4px 7px;
-        color: #53567b;
-        outline: none;
-      
+  background-color: #00a4a4;
+  border-color: #f1ec2e;
+  border-radius: 3px;
+  padding: 4px 7px;
+  color: #53567b;
+  outline: none;
 }
 
 .img-portal {
