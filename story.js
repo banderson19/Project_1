@@ -1,9 +1,9 @@
 function madLibs() {
     var storyDiv = document.getElementById("story");
-    var name = document.getElementById("name").value;
-    var adjective = document.getElementById("adjective").value;
-    var noun = document.getElementById("noun").value;
-    storyDiv.innerHTML = name + " married a " + adjective + " " + noun + "... So weird!";
+    var someonesname = document.getElementById("someonesname").value;
+    var episode = document.getElementById("episode").value;
+    var location = document.getElementById("location").value;
+    storyDiv.innerHTML = someonesname + " married a terryfold at the " + location + " in the " + " " + episode + " And they are Gettin Shwifty!";
   }
   
   var storyBtn = document.getElementById('story-btn');
