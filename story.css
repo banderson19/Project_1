@@ -36,3 +36,16 @@ body {
   font-size: larger;
   color: #faa85f;
 }
+h2 {
+  display: flex;
+  width: 3300px;
+  max-width: 80%;
+  min-width: 23%;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #53567b;
+  border-radius: 2px;
+  box-shadow: 1px 1px 11px 3px;
+}

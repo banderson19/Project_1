@@ -27,7 +27,10 @@ body {
   border-radius: 2px;
   box-shadow: 1px 1px 11px 3px;
 }
-
+#input {
+  background-color: #00a4a4;
+  border-color: #faa85f;
+}
 #text {
   max-width: 80%;
   min-width: 33%;
