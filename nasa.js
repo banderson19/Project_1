@@ -1,3 +1,11 @@
+$(document).ready(function(){
+  $("button").click(function(){
+   $('<img src="https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"/>').appendTo("body");
+    // Appends the HTML Fragment i.e image to <body>
+    $('#apod_img_ofDay').prepend('<img id="apod_img_ofDay" src="https://apod.nasa.gov/apod/image/e_lens.gif" />');
+    });
+  });
+
 $.ajax({
   let: (url =
     "https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"),
@@ -31,8 +39,7 @@ $.ajax({
 // 	if(req.status == 200 && req.readyState == 4){
 //   	var response = JSON.parse(req.responseText);
 //     document.getElementById("title").textContent = response.title;
-//     document.getElementById("date").textContent = response.date;
-//     document.getElementById("pic").src = response.hdurl;
-//     document.getElementById("explanation").textContent = response.explanation;
+//     document.getElementById("apod_img_ofDay").src = response.hdurl;
+//     document.getElementById("apod_explanation").textContent = response.explanation;
 //   }
 // })
