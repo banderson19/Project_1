@@ -5,14 +5,11 @@ $.ajax({
   url: url,
 
   success: function success(result) {
-    //Sometimes they post video too//
+    if (result.media_type == "image") {
+      $("#apod_img_ofDay").css("display");
 
-    if (result.media_type == "video") {
-      $("#apod_img_ofDay").css("display", "none");
-
-      $("#apod_vid_id").attr("src", result.url);
+      $("#apod_img_ofDay").attr("src", result.url);
     } else {
-      $("#apod_vid_id").css("display", "none");
 
       $("#apod_img_ofDay").attr("src", result.url);
     }
