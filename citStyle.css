@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   min-width: fit-content;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 23px;
   margin-top: 41px;
 }
@@ -74,7 +74,8 @@ margin-top: 9px;
 }
 
 /* The Modal (background) */
-.modal {
+.story {
+  display: flex;
   margin-top: 9px;
   margin-right: 7px;
   margin-left: 31px;
@@ -82,7 +83,6 @@ margin-top: 9px;
   background-color: #346b70;
   border-color: #20dfa6;
   border-radius: 3px;
-  padding: 4px 7px;
   color: #faa85f;
   outline: none;
 }
