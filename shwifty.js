@@ -1,62 +1,18 @@
-var modal = document.getElementById("madLibsModal");
-// Get the button that opens the modal
-var btn = document.getElementById("openModal");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-  console.log('open');
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
-const madLibsElement = document.getElementById("madLibsModal");
-const optionsBtnElement = document.getElementById("openModal");
-
-let state = {};
-function takeOff() {
-  state = {};
-  showTextNode(1);
-}
-function showTextNode(textNodeIndex) {
-  const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
-  madLibsElementElement.innerText = textNode.text;
-  while (optionsBtnElement.firstChild) {
-    madLibsModalElement.removeChild(madLibsModalElement.firstChild);
-  }
-  textNode.options.forEach((option) => {
-    if (showOption(option)) {
-      const button = document.createElement("button");
-      button.innerText = option.text;
-      button.classList.add("modal-content");
-      button.addEventListener("click", () => selectOption(option));
-      madLibsModalElement.appendChild(button);
-    }
-  });
-}
-function showOption(option) {
-  return option.requiredState == null || option.requiredState(state);
-}
-function selectOption(option) {
-  const nextTextNodeId = option.nextText;
-  state = Object.assign(state, option.setState);
-  showTextNode(nextTextNodeId);
-}
-const textNodes = [
-  {
-    id: 1,
-    text: "Character",
-    nextText: 2,
-  },
+// function showOption(option) {
+//   return option.requiredState == null || option.requiredState(state);
+// }
+// function selectOption(option) {
+//   const nextTextNodeId = option.nextText;
+//   state = Object.assign(state, option.setState);
+//   showTextNode(nextTextNodeId);
+// }
+// const textNodes = [
+//   {
+//     id: 1,
+//     text: "Character",
+//     nextText: 2,
+//   },
 // let url = fetch("https://rickandmortyapi.com/api/character/252");
 // fetch("https://rickandmortyapi.com/api/character/252")
 //    .then(response => response.json())
@@ -82,7 +38,7 @@ const textNodes = [
 // fetch("https://rickandmortyapi.com/api/character/252")
 //   .then((response) => response.json())
 //   .then((characters) => showCharacters(characters.results));
-]
+// ]
 // showCharacters = (characters) => {
 //   const charactersDiv = document.querySelector("#characters");
 //   characters.forEach((character) => {
