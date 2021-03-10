@@ -1,21 +1,44 @@
 
-
-
-
-
+// function showOption(option) {
+//   return option.requiredState == null || option.requiredState(state);
+// }
+// function selectOption(option) {
+//   const nextTextNodeId = option.nextText;
+//   state = Object.assign(state, option.setState);
+//   showTextNode(nextTextNodeId);
+// }
+// const textNodes = [
+//   {
+//     id: 1,
+//     text: "Character",
+//     nextText: 2,
+//   },
+// let url = fetch("https://rickandmortyapi.com/api/character/252");
+// fetch("https://rickandmortyapi.com/api/character/252")
+//    .then(response => response.json())
+//    .then(characters => showCharacters(characters.results));
+//    showCharacters = characters => {
+//     const charactersDiv = document.querySelector("#characters");
+//     characters.showCharacters(character => {
+//       const characterElement = document.createElement("p");
+//       characterElement.innerText = `Character Name: ${character.name}`;
+//       charactersDiv.append(characterElement);
+//     });
+// }
 // console.log("...")
 // import { getCharacter } from 'rickmortyapi' // getCharacter()
 // // or
-// import NoobNoob from 'rickmortyapi' // noop-noop.getCharacter()
+// import NoobNoob from 'rickmortyapi' // noob-noob.getCharacter()
 // // or
 // const noopNoop = 
+// let charcters = fetch("https://rickandmortyapi.com/api/character/252")
 // const characterElement = document.getElementById("characters").appendChild('p');
 // const locationElement = document.getElementById("location");
 // const episodeElement = document.getElementById("episode");
-// fetch("https://rickandmortyapi.com/api/character/")
+// fetch("https://rickandmortyapi.com/api/character/252")
 //   .then((response) => response.json())
 //   .then((characters) => showCharacters(characters.results));
-
+// ]
 // showCharacters = (characters) => {
 //   const charactersDiv = document.querySelector("#characters");
 //   characters.forEach((character) => {
@@ -23,10 +46,11 @@
 //     characterElement.innerHTML = `Character Name: ${character.name}`;
 //     charactersDiv.append(characterElement);
 //   });
+// }
 // };
 // fetch ("https://rickandmortyapi.com/api/location/3"),
 // {
-// requiredState: (currentState) => currentState.Enter,
+// requiredState: (currentState) => currentState.Enter;
 // setState: { Enter: true },
 // }
 // fetch("https://rickandmortyapi.com/api/location/3,21")
@@ -140,4 +164,4 @@
 //   ],
 //   "url": "https://rickandmortyapi.com/api/episode/16",
 //   "created": "2017-11-10T12:56:35.364Z"
-//   }
+//}

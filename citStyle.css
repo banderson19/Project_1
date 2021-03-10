@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   min-width: fit-content;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 23px;
   margin-top: 41px;
 }
