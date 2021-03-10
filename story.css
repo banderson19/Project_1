@@ -49,3 +49,39 @@ h2 {
   border-radius: 2px;
   box-shadow: 1px 1px 11px 3px;
 }
+
+footer {
+  margin-top: 200px;;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #202020
+}
+p {
+    font-size: 20px;
+    background-color: #54781f;
+}
+
+/*Responsive*/
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .img-portal {
+    width: 600px;
+    height: 600px;
+  }
+
+  .character-image-container {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+  .character-image-container-img {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
