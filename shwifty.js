@@ -1,4 +1,11 @@
-// const characterElement = document.getElementById("characters");
+
+// console.log("...")
+// import { getCharacter } from 'rickmortyapi' // getCharacter()
+// // or
+// import NoobNoob from 'rickmortyapi' // noop-noop.getCharacter()
+// // or
+// const noopNoop = 
+// const characterElement = document.getElementById("characters").appendChild('p');
 // const locationElement = document.getElementById("location");
 // const episodeElement = document.getElementById("episode");
 // fetch("https://rickandmortyapi.com/api/character/")
@@ -13,10 +20,11 @@
 //     charactersDiv.append(characterElement);
 //   });
 // };
-// // fetch ("https://rickandmortyapi.com/api/location/3"),
-// // requiredState: (currentState) => currentState.Enter,
-// // setState: { Enter: true },
-
+// fetch ("https://rickandmortyapi.com/api/location/3"),
+// {
+// requiredState: (currentState) => currentState.Enter,
+// setState: { Enter: true },
+// }
 // fetch("https://rickandmortyapi.com/api/location/3,21")
 //   .then((response) => response.json())
 //   .then((location) => showLocation(location.results));
@@ -28,9 +36,9 @@
 //     locationDiv.append(locationElement);
 //   });
 // };
-// // fetch ("https://rickandmortyapi.com/api/location/3"),
-// // requiredState: (currentState) => currentState.Enter,
-// // setState: { Enter: true },
+// fetch ("https://rickandmortyapi.com/api/location/3"),
+// requiredState: (currentState) => currentState.Enter,
+// setState: { Enter: true },
 // fetch("https://rickandmortyapi.com/api/episode/25")
 //   .then((response) => response.json())
 //   .then((episode) => showEpisode(episode.results));
@@ -43,6 +51,7 @@
 //     episodeDiv.append(episodeElement);
 //   });
 // };
+
 // {
 //   "id": 252,
 //   "name": "Noob-Noob",
