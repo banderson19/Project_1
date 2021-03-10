@@ -1,77 +1,55 @@
-/* *, *::before, *::after
+*, *::before, *::after
  {
     box-sizing: border-box;
     font-family: "Candara";
-    font-size: 25px;
-} */
+}
 body {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 115vw;
-    height: 117vh;
     background-size: contain;
-    background-image: url("rick-and-morty-33909.jpg");
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    box-shadow: 1px 1px 11px 3px;
-
-}
-.nasaPhotos {
-    display: flex;
-    max-width: 80%;
-    min-width: 23%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    box-shadow: 1px 1px 11px 3px;
-
-}
-
-#apod_img_ofDay {
-    display: flex;
-    width: 900px;
-    height: 600px;
-    max-width: 80%;
-    min-width: 23%;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    background-color:transparent;
-    border-radius: 2px;
-    box-shadow: 1px 1px 11px 3px;
-}
-#apod_vid_id {
-
-}
-#apod_explanation{ 
-    display: flex;
-    width: 650px;
-    font-family: "Candara";
-    font-size: 25px;
-     max-width: 80%;
-     min-width: 33%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    color: #faa85f;
-
+    /* background-image: url("rick-and-morty-33909.jpg"); */
 }
 #apod_title {
+    margin-right: 500px;
+    width: 500px;
     display: flex;
-    justify-content:space-around;
-    justify-content: center;
     align-items: center;
-    font-size: larger;
-    margin-bottom: 700px;
+    margin-bottom: 670px;
     color: #faa85f;
     font-family: "Candara";
     font-size: 43px;
+}
+.nasaPhotos {
+    display: flex;
+    flex: 1,
+    justify-content: center;
+    align-items: center;
+}
+#apod_img_ofDay {
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    border-color: #faa85f;
+    border-radius: 2px;
+    box-shadow: 1px 1px 11px 3px;
+}
+.description {
+    margin-left: 900px;
+    /* float: right; */
+}
+#apod_explanation 
+{ 
+    display: flex;
+    width: 500px;
+    height: fit-content;
+    font-family: "Candara";
+    font-size: 25px;
+    max-width: 80%;
+    min-width: 33%;
+    display: flex;
+    align-items: center;
+    color: #faa85f;
 }
