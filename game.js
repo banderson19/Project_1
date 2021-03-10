@@ -9,18 +9,6 @@ const optionsBtnElement = document.getElementById("optionsBtn");
 // const moreChars = await getCharacter({ page: 2 })
 // const tinyRick = require('rickmortyapi')
 let state = {};
-
-// function makeDoubleDelegate(function1) {
-//   return function() {
-//       if (function1)
-//           function1();
-//       if (function2)
-//           function2();
-//   }
-// }
-
-// window.onload = makeDoubleDelegate(window.onload, function1);
-
 function takeOff() {
   state = {};
   showTextNode(1);
@@ -69,12 +57,13 @@ const textNodes = [
       {
         text: "SpaceShip",
         requiredState: (currentState) => currentState.SpaceShip,
-        setState: { SpaceShip: false, beaker: true },
+        setState: { SpaceShip: true, beaker: true },
         nextText: 2,
       },
       {
         text: "Spaceship",
-        nextText: 2,
+        setState: { Spaceship: true },
+        nextText: 3,
       },
       {
         text: "Beaker",
@@ -88,26 +77,58 @@ const textNodes = [
     text: "Do You Choose to Enter?",
     options: [
       {
-        requiredState: (currentState) => currentState.locationElement,
-        setState: { Enter: true },
-        nextText: 4,
+        text: "Citadel",
+        requiredState: (currentState) => currentState.Citadel,
+        setState: { Citadel: true },
       },
       {
-        text: "Citadel of Ricks",
-        requiredState: (currentState) => window.location.assign('citadel.html'),
-        setState: { Enter: true },
+      text: "Citadel",
+      setState: {Citadel: true },
+      nextText: 4,
       },
     ],
   },
+  {
+    id: 4,
+    requiredState: (currentState) => currentState.Enter,
+      setState: { Enter: true },
+      options: [
+        {
+          text: "Enter",
+          requiredState: (currentState) => window.location.assign('citadel.html'),
+          setState: { Enter: true },
+        },
+      ],
+    },
 ];
+
+takeOff();
+//    [ {
+//         window.onload = function(){
+//         document.getElementById("btn-go").onclick= function() {
+//             var start= prompt("Enter the Citadel");
+// };
+// },
+//    [ {
+//         window.onload = function(){
+//         document.getElementById("btn-go").onclick= function() {
+//             var start= prompt("Enter the Citadel");
+// };
+// },
+//    [ {
+//         window.onload = function(){
+//         document.getElementById("btn-go").onclick= function() {
+//             var start= prompt("Enter the Citadel");
+// };
+// },
 
 //    [ {
 //        window.onload = function(){
 //   document.getElementById("btn-go").onclick= function() {
 //     var start= prompt("Enter the Citadel");
 // };
-// };  
+// };
 // };
 // },
 
-takeOff();
+// window.location.assign('citadel.html')
