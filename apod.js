@@ -1,4 +1,4 @@
-const url = 'https://api.nasa.gov/planetary/apod?api_key=j5kldYPZ8SJrzbNVx6C80E4ajrntVXXgcS37E38x'
+const url = 'https://api.nasa.gov/planetary/apod?api_key=PO9R6vYlNUrznxUgVPe9ACNHohw0ucQTUGtkO6wf'
 const api_key = config.NASA_API_KEY
 const fetchNASAData = async () => {
     try {

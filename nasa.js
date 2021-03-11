@@ -1,14 +1,14 @@
 $(document).ready(function(){
   $("button").click(function(){
-   $('<img src="https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"/>').appendTo("body");
-    // Appends the HTML Fragment i.e image to <body>
+   $('<img src="https://api.nasa.gov/planetary/apod?api_key=PO9R6vYlNUrznxUgVPe9ACNHohw0ucQTUGtkO6wf&date=1995-06-16"/>').appendTo("body");
+    
     $('#apod_img_ofDay').prepend('<img id="apod_img_ofDay" src="https://apod.nasa.gov/apod/image/e_lens.gif" />');
     });
   });
 
 $.ajax({
   let: (url =
-    "https://api.nasa.gov/planetary/apod?api_key=ult6atambzs8D68rYchqcYlhYL26w5ohzCPek2Zq&date=1995-06-16"),
+    "https://api.nasa.gov/planetary/apod?api_key=PO9R6vYlNUrznxUgVPe9ACNHohw0ucQTUGtkO6wf&date=1995-06-16"),
 
   url: url,
 
