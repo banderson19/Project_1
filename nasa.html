@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="apod.css" />
+    <title>NASA's Astronomy Picture of the Day</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>NASA's Astronomy Picture of the Day</h1>
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <section class="picture-explanation-container">
+            <img src="" id="picture" alt="astronomy image by NASA" />
+            <p id="explanation"></p>
+        </section>
+    </main>
+    <div class="inputDate">
+        <input id="date" type="date">
+        <button id="button" href="">Submit</button>
+    </div>
+    <div id="results">
+    </div>
+
+    <script type="text/javascript" src="apod_config.js"></script>
+    <script src="apod.js"></script>
+</body>
+
+</html>

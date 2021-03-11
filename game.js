@@ -1,13 +1,5 @@
 const textElement = document.getElementById("text");
 const optionsBtnElement = document.getElementById("optionsBtn");
-// const chars = await getCharacter()
-// const locations = getLocation()
-// const episodes = await getEpisode()
-// You can pass a page number to access all the pages inside the info object
-// To know more about the info object and pagination, check
-// https://rickandmortyapi.com/documentation/#info-and-pagination
-// const moreChars = await getCharacter({ page: 2 })
-// const tinyRick = require('rickmortyapi')
 let state = {};
 function takeOff() {
   state = {};
@@ -82,53 +74,24 @@ const textNodes = [
         setState: { Citadel: true },
       },
       {
-      text: "Citadel",
-      setState: {Citadel: true },
-      nextText: 4,
+        text: "Citadel",
+        setState: { Citadel: true },
+        nextText: 4,
       },
     ],
   },
   {
     id: 4,
     requiredState: (currentState) => currentState.Enter,
-      setState: { Enter: true },
-      options: [
-        {
-          text: "Enter",
-          requiredState: (currentState) => window.location.assign('citadel.html'),
-          setState: { Enter: true },
-        },
-      ],
-    },
+    setState: { Enter: true },
+    options: [
+      {
+        text: "Enter",
+        requiredState: (currentState) => window.location.assign("citadel.html"),
+        setState: { Enter: true },
+      },
+    ],
+  },
 ];
 
 takeOff();
-//    [ {
-//         window.onload = function(){
-//         document.getElementById("btn-go").onclick= function() {
-//             var start= prompt("Enter the Citadel");
-// };
-// },
-//    [ {
-//         window.onload = function(){
-//         document.getElementById("btn-go").onclick= function() {
-//             var start= prompt("Enter the Citadel");
-// };
-// },
-//    [ {
-//         window.onload = function(){
-//         document.getElementById("btn-go").onclick= function() {
-//             var start= prompt("Enter the Citadel");
-// };
-// },
-
-//    [ {
-//        window.onload = function(){
-//   document.getElementById("btn-go").onclick= function() {
-//     var start= prompt("Enter the Citadel");
-// };
-// };
-// };
-// },
-
-// window.location.assign('citadel.html')
