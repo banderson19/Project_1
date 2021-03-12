@@ -20,14 +20,7 @@ body {
     font-family: "Candara";
     font-size: 43px;
 }
-.nasaPhotos {
-    display: flex;
-    flex: 1,
-    justify-content: center;
-    align-items: center;
-}
-#apod_img_ofDay {
-    height:fit-content;
+#img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +30,9 @@ body {
     box-shadow: 1px 1px 11px 3px;
 }
 .description {
-    margin-left: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* float: right; */
 }
 #apod_explanation 
