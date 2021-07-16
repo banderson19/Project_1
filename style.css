@@ -12,7 +12,7 @@ body {
   width: 105vw;
   height: 107vh;
   background-size: contain;
-  background-image: url("rick-and-morty-33909.jpg");
+  background-image: url("./img/rick-and-morty-33909.jpg");
 }
 .container {
   display: flex;

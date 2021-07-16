@@ -8,7 +8,6 @@ body {
     align-items: center;
     display: flex;
     background-size: contain;
-    /* background-image: url("rick-and-morty-33909.jpg"); */
 }
 #apod_title {
     margin-right: 500px;

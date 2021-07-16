@@ -87,7 +87,7 @@ const textNodes = [
     options: [
       {
         text: "Enter",
-        requiredState: (currentState) => window.location.assign("citadel.html"),
+        requiredState: (currentState) => window.location.assign("./htmlTemplates/citadel.html"),
         setState: { Enter: true },
       },
     ],
