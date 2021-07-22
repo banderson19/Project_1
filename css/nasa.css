@@ -2,6 +2,7 @@
  {
     box-sizing: border-box;
     font-family: "Candara";
+    background-color: grey;
 }
 body {
     justify-content: center;
@@ -10,14 +11,13 @@ body {
     background-size: contain;
 }
 #apod_title {
-    margin-right: 500px;
     width: 500px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 670px;
+    text-align: center;
+    margin-bottom: 20px;
     color: #faa85f;
     font-family: "Candara";
     font-size: 43px;
+
 }
 #img {
     display: flex;
@@ -31,11 +31,10 @@ body {
 .description {
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* float: right; */
+    text-align: center;
+    margin-top: 20px;
 }
-#apod_explanation 
-{ 
+#apod_explanation { 
     display: flex;
     width: 500px;
     height: fit-content;

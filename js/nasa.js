@@ -27,3 +27,4 @@ $.ajax({
     $("#apod_title").text(result.title);
   },
 });
+
