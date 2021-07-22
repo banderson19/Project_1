@@ -40,7 +40,7 @@ showLocations = (locations) => {
   locationsDiv.append(locationData);
 };
 
-function madLibs() {
+function madLibs1() {
   var storyDiv = document.getElementById("story");
   var character = document.getElementById("characterSelected").value;
   var episode = document.getElementById("episodeSelected").value;
@@ -55,5 +55,41 @@ function madLibs() {
     " And they are Gettin Shwifty!";
 }
 
-var storyBtn = document.getElementById("story-btn");
-storyBtn.addEventListener("click", madLibs);
+var storyBtn1 = document.getElementById("story-btn1");
+storyBtn1.addEventListener("click", madLibs1);
+
+function madLibs2() {
+  var storyDiv = document.getElementById("story");
+  var character = document.getElementById("characterSelected").value;
+  var episode = document.getElementById("episodeSelected").value;
+  var location = document.getElementById("locationSelected").value;
+  storyDiv.innerHTML =
+    character +
+    " was traveling back in time to " +
+    location +
+    " during epiode " +
+    " " +
+    episode +
+    " and that it was a great quest where " + character + "learned alot about themselves";
+}
+
+var storyBtn2 = document.getElementById("story-btn2");
+storyBtn2.addEventListener("click", madLibs2);
+
+function madLibs3() {
+  var storyDiv = document.getElementById("story");
+  var character = document.getElementById("characterSelected").value;
+  var episode = document.getElementById("episodeSelected").value;
+  var location = document.getElementById("locationSelected").value;
+  storyDiv.innerHTML =
+    "Once upon a time in a place called " +
+    location +
+    ". A fellow named " + 
+    character +
+    " was mildly confused on what direction in life they should take. And during episode " +
+    episode +
+    " it became eyeopening to that Pickle Rick is an all time classic! " 
+}
+
+var storyBtn3 = document.getElementById("story-btn3");
+storyBtn3.addEventListener("click", madLibs3);
