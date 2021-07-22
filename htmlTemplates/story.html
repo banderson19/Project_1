@@ -5,45 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../css/character.css" rel="stylesheet">
-  <link href="../css/story.css" rel="stylesheet">
+  <!-- <link href="../css/story.css" rel="stylesheet">  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
   <title>Rick and Morty Story</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Create a Story!</h1>
-    <p>copy and paste this link to keep the modal open while you generate your input!</p>
-    <ul class="input">
-      <li> Episode: <input type="text" id="episode">
-      <li>Location: <input type="text" id="location">
-      <li>Someone's Name: <input type="text" id="someonesname">
-    </ul>
-    <button id="story-btn">Storytime!</button>
-    <div id="story"></div>
-  </div>
-  <div class="main">
-    <div class="character-container">
-      <img class="img-portal" src="../img/meeseeks.gif">
+  <main>
+
+    <div class="container py-4">
+      <header class="mb-4 d-flex justify-content-between">
+        <div >
+          <h1>Story Time</h1>
+        </div>
+        <div >
+          <img class="img-portal" src="../img/meeseeks.gif">
+        </div>
+      </header>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 border border-secondary p-4">
+          <h4> Create A Story </h4>
+          <ul class="input">
+            <li> Episode: <input type="text" id="episode">
+            <li>
+              <div id="locations">
+                <label>Choose a location</label>
+              </div>
+            </li>
+            <li>Someone's Name: <input type="text" id="someonesname">
+          </ul>
+          <button id="story-btn">Storytime!</button>
+        </div>
+        <div class="col-md-6 border border-secondary p-4">
+          <h4> Here is your story:</h4>
+          <div id="story"></div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-5">
+        <div class="apod">
+          <div class="apod-content"></div>
+          <button class="btn btn-success mt-4" type=button onClick="location.href='apod.html'">A Note About Neutrons
+          </button>
+        </div>
+
+        <div class="apod-choice">
+          <div class="apod-choice-content"></div>
+          <button class="btn btn-success mt-4" type=button onClick="location.href='nasa.html'">See What NASA caught by
+            searching days of the year!
+          </button>
+        </div>
+      </div>
+      
     </div>
-    <div class= "apod">
-      <div class="apod-content"></div>
-      <button class="btn">A Note About Neutrons
-        <input type=button onClick="location.href='apod.html'">
-      </button>
-    </div>
-    <div class= "apod-choice">
-      <div class="apod-choice-content"></div>
-      <button class="btn">See What NASA caught by searching days of the year!
-        <input type=button onClick="location.href='nasa.html'">
-      </button>
-    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      <p>Rick and Morty is a hilarious sitcom about a genius scientist and his grandson exploring the universe!
+        Credit to Justin Roland and Dan Harmon, thank you and we will contribute to your API project for keeping
+        things interesting!</p>
+    </footer>
+  </main>
 </body>
+<script src="../js/location.js" type="text/javascript"></script>
 <script src="../js/story.js" type="text/javascript"></script>
-<footer>
-  <p>Rick and Morty is a hilarious sitcom about a genius scientist and his grandson exploring the universe!
-    Credit to Justin Roland and Dan Harmon, thank you and we will contribute to your API project for keeping
-    things interesting!</p>
-</footer>
 <!-- Rick and Morty vs Portal ⎜ Motion Design by Aurélien Tardieu on Dribbble, https://cdn.dribbble.com/users/2006406/screenshots/6818383/r_m_portal.gif -->
 </body>
 

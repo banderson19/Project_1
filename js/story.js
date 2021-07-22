@@ -2,7 +2,7 @@ function madLibs() {
   var storyDiv = document.getElementById("story");
   var someonesname = document.getElementById("someonesname").value;
   var episode = document.getElementById("episode").value;
-  var location = document.getElementById("location").value;
+  var location = document.getElementById("locationSelected").value;
   storyDiv.innerHTML =
     someonesname +
     " married a terryfold at the " +
