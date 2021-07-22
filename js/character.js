@@ -3,9 +3,11 @@ fetch("https://rickandmortyapi.com/api/character/")
   .then((characters) => showCharacters(characters.results));
 showCharacters = (characters) => {
   const charactersDiv = document.querySelector("#characters");
+  const characterData = document.createElement("select");
+  characterData.setAttribute("id", "characterSelected");
   characters.forEach((character) => {
-    const characterElement = document.createElement("p");
-    characterElement.innerText = `Character Name: ${character.name}`;
-    charactersDiv.append(characterElement);
+    const newCharacterData = new Option(`${character.name}`, `${character.name}`);
+    characterData.appendChild(newCharacterData);
   });
+  charactersDiv.append(characterData);
 };

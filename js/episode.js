@@ -3,9 +3,11 @@ fetch("https://rickandmortyapi.com/api/episode/")
   .then((episodes) => showEpisodes(episodes.results));
 showEpisodes = (episodes) => {
   const episodesDiv = document.querySelector("#episodes");
+  const episodeData = document.createElement("select")
+  episodeData.setAttribute("id", "episodeSelected");
   episodes.forEach((episode) => {
-    const episodeElement = document.createElement("p");
-    episodeElement.innerText = `Episode Name: ${episode.name}`;
-    episodesDiv.append(episodeElement);
+    const newEpisodeData = new Option(`${episode.name}`, `${episode.name}`);
+    episodeData.appendChild(newEpisodeData);
   });
+  episodesDiv.append(episodeData);
 };

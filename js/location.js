@@ -4,13 +4,13 @@ fetch("https://rickandmortyapi.com/api/location/")
 showLocations = (locations) => {
   console.log(222, locations)
   const locationsDiv = document.querySelector("#locations");
-  const listData = document.createElement("select");
-  listData.setAttribute("id", "locationSelected")
+  const locationData = document.createElement("select");
+  locationData.setAttribute("id", "locationSelected");
   locations.forEach((location) => {
-    const newListData = new Option(`${location.name}`, `${location.name}`);
-    listData.appendChild(newListData)
+    const newLocationData = new Option(`${location.name}`, `${location.name}`);
+    locationData.appendChild(newLocationData)
   });
-  locationsDiv.append(listData);
+  locationsDiv.append(locationData);
 
 };
 
